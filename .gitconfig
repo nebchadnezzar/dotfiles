@@ -1,0 +1,11 @@
+[user]
+	name = nebchadnezzar
+	email = habakkuk.taka1208@gmail.com
+[core]
+	excludesfile = /Users/taka/.gitignore_global
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
