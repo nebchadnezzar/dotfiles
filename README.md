@@ -6,15 +6,16 @@ Overview
 ## Description
 vim、zshとgitの設定ファイルをバックアップしよう！  
 ## Usage
-'''  
+```
 cd ~  
 git clone git@github.com:nebchadnezzar/dotfiles.git  
-'''  
-  
-## Install
-'''  
+```
+
+## Instal
+```
 chmod +x dotfilesInstaller.sh  
 ./dotfilesInstaller.sh  
-'''  
+```
+
 ## Author
 [nebchadnezzar](https://github.com/nebchadnezzar)

@@ -201,14 +201,9 @@ local tac
 					zle -N peco-select-history
 					bindkey '^r' peco-select-history
 
-function peco-nico-bgm() {
-TAG=`echo "作業用BGM $*" | nkf -WwMQ | tr -d '\n' | tr = % | sed -e 's/%%/%/g'`
-ruby -r rss -e "RSS::Parser.parse(\"http://www.nicovideo.jp/tag/$TAG?rss=2.0\").channel.items.each {|item| puts item.link + \"\t\" + item.title}" | peco | while read line; do
-echo $line
-echo $line | awk '{print $1}' | nicovideo-dump | mplayer - -novideo
-done
-}
 
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
 function git(){hub "$@"}
+export PATH=/usr/local/bin:$PATH
+
